@@ -1,0 +1,12 @@
+1: Is testing important? (Yes, No)
+2: If we don't apply testing, then there's no way to loose money (Yes, No)
+3: If testing is important, then not applying testing may not result in catastrophic results (Yes, No)
+4: May testing make you a better developer? (Definitely, No)
+5: Unit testing can be called (Component testing, Fragile testing, system testing)
+6: Unit testing benefits are(Making development faster, Easier code to maintain, Both)
+7: Test driven development means, develop the code then make the test cases (Yes, No)
+8: Behavior driven development came out of TDD (Yes, No)
+9: Unlike TDD, the BDD approach is to build then code then make the test cases for the code (Yes, No)
+10: In java, there's a lack of testing tools & frameworks (Yes, No)
+11: 
+12: 

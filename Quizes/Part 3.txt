@@ -1,0 +1,12 @@
+1: The phase in software testing in which individual software modules are combined and tested as a group. This can be defined as (Integration testing, Unit testing) - Integration testing
+2: We can't use integration testing to test the integration with the database or a webservice (Yes, No) - No, we can use it
+3: Integration testing has 3 main approaches Bottom up, Top down, Sandwitch) (Yes, No) - Yes
+4: In the Bottom-Up approach, the lowest level components are tested first, Then repeat the process until the high components are tested. (Yes, No) Yes
+5: In the Top-Down approach, the top integrated modules are tested and the branch of the module is tested step by step until the end of the related module (Yes, No) Yes
+6: During Integration testing, we can't use the usual assert methods (Yes, No) - No
+7: Mocking is a process used in unit testing when the unit being tested has external dependencies (Yes, No) - Yes
+8: The purpose of mocking is to isolate and focus on the code being tested and not on the behavior or state of external dependencies (Yes, No) - Yes
+9: Mock objects are configured to perform a certain behavior during a test (Yes, No) - Yes
+10: There's a shortage of mocking frameworks(Yes, No) - No, there're mocking frameworks like (Mockito, PowerMockito, EasyMock)
+11: 
+12: 

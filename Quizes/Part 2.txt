@@ -1,0 +1,12 @@
+1: xUnit is the collective name for several unit testing frameworks (Yes, No) - Yes
+2: A test runner is an executable program that runs tests (Yes, No) - Yes
+3: is a set of conditions or variables under which a tester will determine whether a system under test satisfies requirements or works correctly (Test case, test fixture, test suite) - Test case
+4: A context where a Test Case runs. This means you can allocate some resources and de-allocate them each time before and after every test case. (Test case, test fixture, test suite) - Test fixture
+5: A set of tests that all share the same fixture. The order of the tests shouldn't matter. It is used to bundle a few unit test cases and run them together. (Test case, test fixture, test suite) - test suite
+6: Asserts that expected value and actual value are equal. This is (assertTrue, assertEqual, assertNull) - assertEqual
+7: Asserts that the coming value is null. This is (assertNull, assertNotNull, assertFalse) - assertNotNull
+8: Asserts that the original & actual are referring to the same object (assertSame, assertNull, assertFalse) - assertSame
+9: @Before or @BeforeEach for JUnit 5, will be called each time before test case runs (Yes, No) - Yes
+10: JUnit has a lack that its unable to provides us with the capability of tracing the exception handling of code. (Yes, No) - No
+11: One of the the best testing practices is to write a suitable  & convenient name for the test case (Yes, No) - Yes
+ 
