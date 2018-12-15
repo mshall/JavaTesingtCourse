@@ -6,17 +6,39 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
-//@RunWith(JUnitPlatform.class)
+
+@RunWith(JUnitPlatform.class)
 class AppTest {
 	App app = null;
 
+	@BeforeAll
+	static void setUp() {
+		System.out.println("@BeforeAll will be called only once");
+	}
+
 	@BeforeEach
-	public void setup() {
+	void setUpEachTime() {
 		app = new App();
+		System.out.println("@BeforeEach is executed before each test case");
+	}
+
+	@AfterEach
+	void tearDownEach() {
+		System.out.println("@AfterEach is executed after each test case");
+	}
+
+	@AfterAll
+	static void tearDown() {
+		System.out.println("@AfterAll is executed once");
 	}
 
 	@Test
@@ -26,7 +48,7 @@ class AppTest {
 	}
 
 	@Test
-	public void returnTrue() {
+	public void givenTrueWhenTestReturnTrueThenReturnTrue() {
 		assertTrue(app.returnTrue());
 	}
 
@@ -49,4 +71,5 @@ class AppTest {
 	public void givenArraysWhenTestReturnFirstArrayThenReturnTrue() {
 		assertArrayEquals(app.returnFirstArray(), app.returnSecondArray());
 	}
+
 }
